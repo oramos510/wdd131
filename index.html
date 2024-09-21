@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="styles/box-model.css">
-    </head>
-    <body>
-        <h1> Box Model</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubia M. Francesco - Dynamic Web Fundamentals</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Rubia M. Francesco</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">I-Learn</a></li>
+            <li><a href="#">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My name is Oscar. I was born in California and live with my family in the Bayarea. I am currently working as an IT Service Technician  at one of Uber's Headquaters as a contactor. I love spending time with my family and frinds. I love to explore new things and ride my motorcycle when its nice out.</p>
+                <img src="images/IMG_face.jpg" alt="Oscar's Profile Picture">
+            </div>
+
+            <h3>California, USA</h3>
+            <div class="location-content">
+                <img src="images/Cali.jpg" alt="Official Flag of California" class="flag">
+                <p>California, a western U.S. state, stretches from the Mexican border along the Pacific for nearly 900 miles. Its terrain includes cliff-lined beaches, redwood forest, the Sierra Nevada Mountains, Central Valley farmland and the Mojave Desert. The city of Los Angeles is the seat of the Hollywood entertainment industry. Hilly San Francisco is known for the Golden Gate Bridge, Alcatraz Island and cable cars
+        </section>
+
+        <section class="web-dev-resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://picsum.photos">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Oscar Ramos, California</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+</body>
 </html>

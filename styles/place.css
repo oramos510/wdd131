@@ -1,0 +1,46 @@
+header {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: var(--main-bg-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.data{
+    padding: 20px;
+    color: blue;
+    display: flex;
+.weather { 
+
+}
+.weather h2::after {
+    content: "⛅"; 
+    margin-left: 10px;
+}
+
+footer {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .hero img {
+        width: 100%; 
+    }
+}

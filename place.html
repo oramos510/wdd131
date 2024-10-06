@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/place.css"> 
+</head>
+<body>
+    <header>
+    <h1>El Salvador</h1>
+    </header>
+    <main>
+    <section class="hero">
+        <img src="images/el-salvador.jpg" alt="Place Image" srcset="images/el-salvador.jpg">
+
+    </section>
+
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li>Area: 21,041 km2</li> 
+            <li>Population: 6,338,193</li>
+            <li>San Salvador</li>
+            <li>Languages: spanish</li>
+            <li>Currency: United States Dollar, Bitcoin</li>
+            <li>Time Zone:  (GMT-6)</li>
+            <li>Calling Code: +503</li>
+            <li>Internet TLD: .sv</li>
+        </ul>
+    </section>
+->
+    <section class="weather">
+        <h2>Weather ⛅</h2>
+        <ul>
+            <li>Temperature: 10°C</li>
+            <li>Conditions: Partly Cloudy</li>
+            <li>Wind: 5 km/h</li>
+            <li>Wind Chill: <span id="windChill"></span></li>
+        </ul>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oscar Ramos | California</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

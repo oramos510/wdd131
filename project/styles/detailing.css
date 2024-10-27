@@ -1,58 +1,234 @@
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+header {
+    background-color: #222;
+}
+
+.navbar,
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-images figure {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #444;
+}
+
+.pricing-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.pricing-table th {
     background-color: #f4f4f4;
     color: #333;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+.pricing-table tr:hover {
+    background-color: #f9f9f9;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 2rem;
-}
-
-.hero {
-    background: url('car-detailing.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
     text-align: center;
 }
 
-section {
-    margin-bottom: 2rem;
+.slide {
+    display: none;
+}
+
+.slide video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #333;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
     text-align: center;
-    padding: 1rem;
+    margin-top: 30px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
